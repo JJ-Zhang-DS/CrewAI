@@ -1,7 +1,7 @@
 from textwrap import dedent
 from crewai import Agent, Task, Crew
 
-class MeetingPrepTask():
+class MeetingPrepTasks():
     """Prepare for a meeting with the client"""
 
     def research_task(self, agent, meeting_participants, meeting_context):
@@ -22,6 +22,7 @@ class MeetingPrepTask():
             agent = agent,
             async_execution = True,
         )
+        
     def industry_analysis_task(self, agent, participants, meeting_context):
         """Analyze the industry of the participants"""
         return Task(
