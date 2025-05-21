@@ -1,0 +1,9 @@
+.env
+__pycache__/
+logs/
+
+# Ignore all files in the logs directory
+logs/*
+
+# ignore checkouts
+checkouts/
