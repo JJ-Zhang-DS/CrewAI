@@ -1,9 +1,15 @@
 .env
 __pycache__/
-logs/
 
-# Ignore all files in the logs directory
-logs/*
 
 # ignore checkouts
 checkouts/
+
+# ignore the virtual environment
+venv/
+.venv/
+
+# ignore the .idea directory
+.idea/
+
+
