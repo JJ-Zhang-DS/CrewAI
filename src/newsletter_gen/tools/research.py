@@ -21,8 +21,8 @@ class SearchAndContents(BaseTool):
             query=search_query,
             use_autoprompt=True,
             start_published_date=date_cutoff,
-            text={"include_html_tags": False, "max_characters": 8000},
-            num_results=5
+            text={"include_html_tags": False, "max_characters": 2000},
+            num_results=3
         )
 
         return search_results

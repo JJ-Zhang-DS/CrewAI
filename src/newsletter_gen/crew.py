@@ -21,10 +21,10 @@ class NewsletterGenCrew:
     tasks_config = "config/tasks.yaml"
 
     def llm(self):
-        # use openai model with larger context window
+        # use cheaper model with smaller context window
         llm = ChatOpenAI(
-            model="gpt-4-turbo-preview",  # This model has a larger context window
-            max_tokens=4096,
+            model="gpt-3.5-turbo",  # Cheaper model
+            max_tokens=1024,  # Reduced token limit
             temperature=0.7
         )
         #llm = ChatAnthropic(model_name="claude-3-sonnet-20240229", max_tokens=4096)
